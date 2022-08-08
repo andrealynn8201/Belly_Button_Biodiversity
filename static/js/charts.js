@@ -53,7 +53,7 @@ function buildMetadata(sample) {
 
   });
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////
 // 1. Create the buildCharts function.
 function buildCharts(sample) {
   // 2. Use d3.json to load and retrieve the samples.json file 
@@ -104,10 +104,10 @@ function buildCharts(sample) {
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar-plot", barData, barLayout);
 
+  /////////////////////////////////////////////////////////////////////////////////
   // Deliverabe 2 - bubble chart
   // 1. Create the trace for the bubble chart.
-
-  var bubbleData = [{
+    var bubbleData = [{
     x: otu_ids,
     y: sample_values,
     text : otu_labels,
@@ -134,7 +134,7 @@ function buildCharts(sample) {
   // 3. Use Plotly to plot the data with the layout.
   Plotly.newPlot("bubble-plot", bubbleData, bubbleLayout);
   
-  
+  ////////////////////////////////////////////////////////////////
   // Deliverable 3 - Gauge Chart
   // Create a variable that filters the metadata array for the object with the desired sample number.
   // Create a variable that holds the first sample in the array.
